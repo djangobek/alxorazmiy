@@ -15,6 +15,193 @@
 
       
     <title>Muhammad al-Xorazmiy | Samarqand filiali</title>
+    <style>
+        /* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+/* Navigation Bar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%;
+    background: #333;
+    color: white;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 50px;
+    margin-right: 10px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+
+nav button {
+    background: #ff5722;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 50px 5%;
+    text-align: center;
+}
+
+.hero img {
+    width: 100%;
+    max-width: 500px;
+}
+
+/* About Section */
+.about {
+    padding: 50px 5%;
+    text-align: center;
+}
+
+.items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.item {
+    width: 300px;
+    background: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Video Section */
+.Maktab__video {
+    padding: 20px 5%;
+}
+
+.Maktab__video video {
+    width: 100%;
+    max-width: 800px;
+    display: block;
+    margin: auto;
+}
+
+/* Projects Section */
+.projects {
+    text-align: center;
+    padding: 50px 5%;
+}
+
+/* Contact Section */
+.contact {
+    text-align: center;
+    padding: 50px 5%;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #222;
+    color: white;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 1024px) {
+    .nav-links {
+        gap: 10px;
+    }
+    
+    .hero h2 {
+        font-size: 50px;
+    }
+
+    .item {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        display: none;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .hero {
+        flex-direction: column;
+    }
+
+    .hero h2 {
+        font-size: 40px;
+    }
+
+    .hero img {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h2 {
+        font-size: 30px;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .nav-links.active {
+        display: block;
+    }
+
+    .projects h2 {
+        font-size: 24px;
+    }
+
+    footer {
+        font-size: 14px;
+    }
+}
+
+    </style>
 </head>
 
 <body>
